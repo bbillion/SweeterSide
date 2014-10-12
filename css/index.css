@@ -1,44 +1,57 @@
 body {
-	background-image: url("/background.jpg");
+	background-image: url("../images/brickwall.png");
 }
 
 img.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
+    padding: 20px;
 }
 
-
-.nav-bar ul {
-  list-style-type: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-.nav-bar li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 5px solid #888;
-  float: left;
-  padding:10px;
+.nav-bar {
+width: 800px;
+background-color: #FF6EC7;
+margin: 10px auto;
 }
  
 .nav-bar a {
   text-decoration: none;
-  color: #dddddd;
-  width: 60px;
+  color: #545454;
+  border-bottom: 5px solid #888;
+  
+  font-size: 20px;
 }
  
 .nav-bar a:hover {
-  background-color: #005f5f;
+  background-color: #dddddd;
 }
  
 .nav-bar a.active {
   background-color: #fff;
   color: #444;
   cursor: default;
+}
+
+.slide-viewer {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  
+}
+
+.slide-group{ 
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slide: first-child {
+display: block;
 }
